@@ -19,14 +19,14 @@ module.export = {
     loaders: [
       {
         test:/\.jsx?$/,
-        exclude; /node_module/,
-        loader:['react-hot', 'babel?presets[]=react,presets[]=es2015']
+        exclude: /node_modules/,
+        loaders:['react-hot', 'babel?presets[]=react,presets[]=es2015']
       }
     ]
   },
   plugins: [
-    new webpack.HotModulesReplacementPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
   ]
 
-}
+};
