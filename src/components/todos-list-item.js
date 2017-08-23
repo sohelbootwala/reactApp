@@ -23,7 +23,7 @@ export default class TodosListItem extends React.Component {
           <button onClick={this.onEditClick.bind(this)}>Edit</button>
           <button>Delete</button>
         </td>
-      )
+      )   
   }
 
   render() {
